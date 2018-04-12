@@ -20,11 +20,4 @@ public class Api {
     public Response locateInvestments(InvestInput investInput){
         return Response.ok(invest.investFoundsByStyle(investInput), MediaType.APPLICATION_JSON_TYPE).build();
     }
-
-    @GET
-    @Path("/investments")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getInvestments(){
-        return Response.ok().build();
-    }
 }
